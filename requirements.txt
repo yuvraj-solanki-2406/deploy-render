@@ -1,5 +1,3 @@
 flask
-numpy
-pickle-mixin
-os
+numpy==1.23
 sklearn
