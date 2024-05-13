@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PREDICTION PAGE</title>
+  <style>
+    /* CSS styles for the form page */
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+    }
+    
+    h1 {
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+    
+    textarea {
+      height: 100px;
+    }
+    
+    input[type="submit"] {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 style="font-size: 2rem; color: blueviolet; margin-bottom: 40px;">CALCULATE THE DEPTH IN MM</h1>
+    <form action="{{url_for('home')}}" method="post">
+     
+      
+  <div style="margin-left: 20px; font-size: large;">    <label style="margin-top: 20px;">No. of Passes (in Thousands)</label></div>
+      <input type="text" id="TV" name="s0" style="margin-left: -10px;" required>
+
+     
+      
+     
+      
+      <br><br><br>
+      <input type="submit"name="submit" value="predict" >
+    </form>
+  </div>
+</body>
+</html>
